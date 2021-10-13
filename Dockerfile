@@ -16,6 +16,7 @@ USER jenkins
 
 RUN pip install -r requirements.txt
 
+USER root
 # Bundle app source
 COPY . /usr/src/app
 
