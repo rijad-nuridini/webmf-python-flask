@@ -14,7 +14,7 @@ RUN chown jenkins:jenkins /home/jenkins
 USER jenkins
 
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --user
 
 USER root
 # Bundle app source
