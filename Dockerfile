@@ -22,4 +22,5 @@ COPY . /usr/src/app
 
 EXPOSE 5000
 USER jenkins
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["python"]
+CMD ["app.py"]
