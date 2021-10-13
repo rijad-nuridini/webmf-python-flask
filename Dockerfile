@@ -21,5 +21,4 @@ USER root
 COPY . /usr/src/app
 
 EXPOSE 5000
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+ENTRYPOINT ["python", "app.py"]
