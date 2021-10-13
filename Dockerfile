@@ -16,5 +16,6 @@ RUN pip3 install -r requirements.txt --user
 COPY . /usr/src/app
 
 EXPOSE 5000
+USER jenkins
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
