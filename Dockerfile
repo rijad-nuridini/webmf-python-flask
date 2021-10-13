@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY requirements.txt /usr/src/app/
-
+USER jenkins
 RUN pip3 install -r requirements.txt --user
 
 # Bundle app source
